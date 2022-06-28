@@ -8,18 +8,18 @@ const Home: NextPage = () => {
       <Header />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
           <div className="mb-6 text-4xl flex flex-row">
-            <Link href="/preview">
-              Import CSV
-            </Link>
+              データプレビュー画面
           </div>
           <div className="flex flex-row">
-            <form>
-              <input type="text" name="name" className='w-96 border border-gray-300 p-2.5'/>
-            </form>
+            <div className='w-80 h-60 bg-orange-400'>
+                CSVのイメージ
+            </div>
           </div>
-          <div className="mt-6 text-4xl flex flex-row">
-            データを検索
-          </div>
+          <button className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <Link href="/draw">
+                データを描画する
+            </Link>
+          </button>
       </div>
     </div>
   )
