@@ -4,23 +4,18 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="flex flex-col w-screen h-screen">
       <Header />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-          <div className="mb-6 text-4xl flex flex-row">
-            <Link href="/preview">
-              Import CSV
-            </Link>
+      {/* container */}
+      <div className="flex flex-row grow">
+          {/* sidebar */}
+          <div className="w-36 bg-gray-100 border-r border-gray-300">
+
           </div>
-          <div className="flex flex-row">
-            <form>
-              <input type="text" name="name" className='w-96 border border-gray-300 p-2.5'/>
-            </form>
-          </div>
-          <div className="mt-6 text-4xl flex flex-row">
-            <Link href="/search">
-              データを検索
-            </Link>
+
+          {/* content */}
+          <div className="flex flex-col grow">
+            
           </div>
       </div>
     </div>
