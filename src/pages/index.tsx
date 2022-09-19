@@ -14,7 +14,7 @@ import { Suspense } from "react";
 
 function Scene() {
   const fbx = useLoader(FBXLoader, 'octopus.fbx')
-  return <primitive object={fbx} />
+  return <primitive object={fbx} scale={0.05}/>
 }
 
 const Home: NextPage = () => {
