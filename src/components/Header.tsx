@@ -5,7 +5,7 @@ export const Header: React.FC = () => {
     <div className="h-10 border-b border-gray-300">
       <div className="text-2xl text-left ml-5">
         <Link href="/">
-          DigitalCanvas
+        Demiurge4D
         </Link>
       </div>
     </div>
