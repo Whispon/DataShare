@@ -6,6 +6,7 @@ import { useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { Suspense } from "react";
+import Link from 'next/link'
 
 // function Scene() {
 //   const fbx = useFBX('casper-octpus-0209-b.fbx')
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
           {/* sidebar */}
           <div className="w-36 bg-gray-100 border-r border-gray-300 h-screen">
             <div className="flex flex-col">
-              <a className="text-center" href="/products">products</a>
+              <Link className="text-center" href="/products">products</Link>
             </div>
           </div>
 
