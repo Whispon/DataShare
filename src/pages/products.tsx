@@ -22,55 +22,61 @@ const Home: NextPage = () => {
     <div className="flex flex-col w-screen h-screen">
       <Header />
       {/* container */}
-      <div className="flex flex-row grow justify-center">
+      <div className="flex flex-row justify-center">
           {/* content */}
-          <div className="grid grid-cols-3">
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
+          <div className="grid grid-cols-3 gap-2 mt-6">
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
                 <Suspense fallback={null}>
                     <Scene />
                     <OrbitControls />
                 </Suspense>
               </Canvas>
             </div>
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
-                  <Suspense fallback={null}>
-                    <Scene />
-                    <OrbitControls />
-                  </Suspense>
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
+                <Suspense fallback={null}>
+                  <Scene />
+                  <OrbitControls />
+                </Suspense>
               </Canvas>
             </div>
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
-                  <Suspense fallback={null}>
-                    <Scene />
-                    <OrbitControls />
-                  </Suspense>
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
+                <Suspense fallback={null}>
+                  <Scene />
+                  <OrbitControls />
+                </Suspense>
               </Canvas>
             </div>
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
-                  <Suspense fallback={null}>
-                    <Scene />
-                    <OrbitControls />
-                  </Suspense>
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
+                <Suspense fallback={null}>
+                  <Scene />
+                  <OrbitControls />
+                </Suspense>
               </Canvas>
             </div>
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
-                  <Suspense fallback={null}>
-                    <Scene />
-                    <OrbitControls />
-                  </Suspense>
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
+                <Suspense fallback={null}>
+                  <Scene />
+                  <OrbitControls />
+                </Suspense>
               </Canvas>
             </div>
-            <div className="border m-2">
-              <Canvas className="h-[96px] w-[96px]">
-                  <Suspense fallback={null}>
-                    <Scene />
-                    <OrbitControls />
-                  </Suspense>
+            <div className="border">
+              <Canvas>
+                <color attach="background" args={['#ababab']} />
+                <Suspense fallback={null}>
+                  <Scene />
+                  <OrbitControls />
+                </Suspense>
               </Canvas>
             </div>
           </div>
