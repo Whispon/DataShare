@@ -19,7 +19,7 @@ function Scene() {
   return <primitive object={copiedScene} ref={prim} scale={0.05}/>
 };
 
-const products: NextPage = () => {
+const Products: NextPage = () => {
   const { user, error, isLoading } = useUser();
   // ログインしていたら
   if (user) return (
@@ -92,4 +92,4 @@ const products: NextPage = () => {
   );
 };
 
-export default products;
+export default Products;
