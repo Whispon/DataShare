@@ -9,6 +9,8 @@ import { useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { Suspense } from "react";
+import { useUser } from '@auth0/nextjs-auth0';
+import { BeforeLogin } from '../components/BeforeLogin';
 
 function Scene() {
   const fbx = useLoader(FBXLoader, 'octopus.fbx');
@@ -17,8 +19,10 @@ function Scene() {
   return <primitive object={copiedScene} ref={prim} scale={0.05}/>
 };
 
-const Home: NextPage = () => {
-  return (
+const products: NextPage = () => {
+  const { user, error, isLoading } = useUser();
+  // ログインしていたら
+  if (user) return (
     <div className="flex flex-col w-screen h-screen">
       <Header />
       {/* container */}
@@ -82,7 +86,10 @@ const Home: NextPage = () => {
           </div>
       </div>
     </div>
-  )
-}
+  );
+  return (
+    <BeforeLogin />
+  );
+};
 
-export default Home
+export default products;
