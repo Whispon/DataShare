@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             <Link href="/">
               Demiurge4D
             </Link>
-            Welcome {user.name}!  <Link href="/api/auth/logout">Logout</Link>
+            {user.name}!  <Link href="/api/auth/logout">Logout</Link>
           </div>
         </div>
       </div>
@@ -48,11 +48,13 @@ export const Header: React.FC = () => {
   return (
     <div className="h-10 border-b border-gray-300">
       <div className="text-2xl text-left ml-5">
-        <div className='flex flex-row'>
+        <div className='flex w-screen'>
           <Link href="/">
             Demiurge4D
           </Link>
-          <Link href="/api/auth/login">Login</Link>
+          <div className="flex ml-auto mr-[100px]">
+            <Link href="/api/auth/login">Login</Link>
+          </div>
         </div>
       </div>
     </div>
