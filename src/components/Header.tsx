@@ -7,11 +7,13 @@ export const Header: React.FC = () => {
   if (isLoading) return (
     <div className="h-10 border-b border-gray-300">
         <div className="text-2xl text-left ml-5">
-          <div className='flex flex-row'>
+          <div className='flex w-screen'>
             <Link href="/">
               Demiurge4D
             </Link>
-            <div>Loading...</div>
+            <div className="flex ml-auto mr-[100px]">
+              <div>Loading...</div>
+            </div>
           </div>
         </div>
       </div>
@@ -20,11 +22,13 @@ export const Header: React.FC = () => {
   if (error) return (
     <div className="h-10 border-b border-gray-300">
         <div className="text-2xl text-left ml-5">
-          <div className='flex flex-row'>
+          <div className='flex w-screen'>
             <Link href="/">
               Demiurge4D
             </Link>
-            <div>{error.message}</div>
+            <div className="flex ml-auto mr-[100px]">
+              <div>{error.message}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -34,11 +38,14 @@ export const Header: React.FC = () => {
     return (
       <div className="h-10 border-b border-gray-300">
         <div className="text-2xl text-left ml-5">
-          <div className='flex flex-row'>
+          <div className='flex w-screen'>
             <Link href="/">
               Demiurge4D
             </Link>
-            {user.name}!  <Link href="/api/auth/logout">Logout</Link>
+            <div className="flex ml-auto mr-[100px]">
+              <div className='mr-2'>{user.name}</div>
+              <Link href="/api/auth/logout">Logout</Link>
+            </div>
           </div>
         </div>
       </div>
