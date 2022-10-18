@@ -7,7 +7,7 @@ export const BeforeLogin: React.FC = () => {
       {/* container */}
       <div className="flex flex-col ... item-center justify-center">
         <h1 className='text-2xl mb-2'>欲しいフィギュアをプリントしよう。</h1>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"><Link href="/api/auth/login">ログインする</Link></button>
+        <Link href="/api/auth/login"><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">ログインする</button></Link>
       </div>
     </div>
   )
